@@ -1,0 +1,47 @@
+﻿{
+  "greetings": [
+    "Hey there",
+    "Hi ya 👋",
+    "Hey %0",
+    "Hi %0",
+    "Namaste",
+    "Hola!",
+    "Howdy",
+    "Well hello",
+    "Greetings",
+    "Why hello there",
+    "Look who it is!",
+    "What's up?",
+    "Hello, human."
+  ],
+  "help_inquire": [
+    "How can I help you?",
+    "Anything I can do for you?",
+    "What can I do for ya?",
+    "I'm here if you need anything",
+    "Let me know if I can help you out"
+  ],
+  "pre_working": [
+    "Let's see here 🤔",
+    "I can help with that!",
+    "Let me help with that"
+  ],
+  "attachment_reply_initial": [
+    "What is that?",
+    "Hmmm, what's that?",
+    "I'm not really sure what I'm supposed to do with that.",
+    "Interesting I guess.",
+    "Thanks for that!",
+    "I'll store that away"
+  ],
+  "attachment_reply_secondary": [
+    "If you say so.",
+    "Well ok then"
+  ],
+  "jokes": [
+    "A bear walks into a bar and says to the bartender, 'I'll have a pint of beer and a.......... packet of peanuts.' The bartender asks, 'Why the big pause?'",
+    "What does a subatomic duck say? Quark.",
+    "A geologist's favorite saying: 'Igneous is bliss, but being sedimentary is not gneiss.'",
+    "A photon checks into a hotel. The bellhop asks, 'Do you have any luggage?' The photon replies, 'No, I'm travelling light.'"
+  ]
+}

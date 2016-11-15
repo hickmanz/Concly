@@ -1,0 +1,98 @@
+{
+  "initial": [
+    {
+      "type": "text",
+      "specialInsertions": [
+        "name"
+      ],
+      "messageText": "Hey %0 👋 I’m Concly! I’m here to help you find things to do. Whether that’s finding you a place to eat or helping you get tickets to that big game."
+    },{
+        "type": "text",
+        "messageText": "You can say things like, ‘Find me a taco place with outdoor seating’, or ‘What is there to do in Detroit this weekend?’\r\n Want a to catch a movie? Ask to see the show times."
+    },{
+      "type": "as-is",
+      "messageData": {
+        "recipient": {
+          "id": ""
+        },
+        "message": {
+          "attachment": {
+            "type": "template",
+            "payload": {
+              "template_type": "button",
+              "text": "For a more complete list of examples type ‘examples’ \r\n\r\n If you ever get lost just type ‘help’ or click the menu icon in the bottom left.",
+              "buttons": [
+                {
+                  "type": "postback",
+                  "title": "See more examples",
+                  "payload": "see_examples"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+    "location_request": [{
+        "type": "as-is",
+        "messageData": {
+            "recipient": {
+                "id": ""
+            },
+            "message": {
+                "text": "Where at?",
+                "quick_replies": [{
+                    "content_type": "location"
+                }]
+            }
+        }
+    }],
+    "attachment_reply_initial": [{
+        "type": "random-text"
+    }],
+    "jokes": [{
+        "type": "random-text"
+    }],
+    "help_inquire": [{
+        "type": "random-text"
+    }],
+    "greetings": [{
+        "type": "random-text",
+        "specialInsertions": [
+            "name"
+        ]
+    }],
+    "send_options_quick_reply": [
+      [
+        {
+          "content_type": "text",
+          "title": "More places 🙋",
+          "payload": "more_options"
+        },
+        {
+          "content_type": "text",
+          "title": "Pick for me 💁",
+          "payload": "pick_for_me"
+        },
+        {
+          "content_type": "text",
+          "title": "Not what I wanted 🙅",
+          "payload": "not_what_i_wanted"
+        }
+      ],
+      [
+
+        {
+          "content_type": "text",
+          "title": "Pick for me 💁",
+          "payload": "pick_for_me"
+        },
+        {
+          "content_type": "text",
+          "title": "Not what I wanted 🙅",
+          "payload": "not_what_i_wanted"
+        }
+      ]
+    ]
+}

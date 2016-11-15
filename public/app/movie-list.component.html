@@ -1,0 +1,71 @@
+<!-- Filter the Movie Title   -->
+<div>
+  <h2>Movie List</h2>
+  <div>Who is your favorite hero?</div>
+  <div>
+    <input [(ngModel)]="favoriteHero" />
+
+    <span [ngSwitch]="favoriteHero &&
+                   checkMovieHero(favoriteHero)">
+      <p *ngSwitchCase="true">
+        Excellent choice!
+      </p>
+      <p *ngSwitchCase="false">
+        No movie, sorry!
+      </p>
+      <p *ngSwitchDefault>
+        Please enter your favorite hero.
+      </p>
+    </span>
+  </div>
+</div>
+
+<h3 [hidden]="!favoriteHero">
+  Your favorite hero is: {{favoriteHero}}
+</h3>
+
+<div>
+  <table *ngIf="movies.length">
+    <thead>
+      <tr>
+        <th>
+          <button (click)="toggleImage()">
+            {{showImage ? "Hide" : "Show"}} Poster
+          </button>
+        </th>
+        <th>Title</th>
+        <th>Hero</th>
+        <th>Release Date</th>
+        <th>Rating</th>
+        <th>Price</th>
+        <th>Star rating</th>
+        <th>Approval rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movie of movies">
+        <td>
+          <img [hidden]="!showImage || !movie.imageurl"
+                [style.height.px]="50"
+                [style.margin.px]="2"
+                [src]="movie.imageurl"
+                [title]="movie.title">
+        </td>
+        <td>{{movie.title}}</td>
+        <td>{{movie.hero}}</td>
+        <td>{{movie.releaseDate | date}}</td>
+        <td>{{movie.mpaa | uppercase}}</td>
+        <td>{{movie.price | currency:'USD':true}}</td>
+        <td>{{movie.starRating | number:'1.1-2'}}</td>
+        <td>{{movie.approvalRating | percent: '1.0-0'}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

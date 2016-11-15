@@ -1,0 +1,39 @@
+{
+  "name": "concly-api",
+  "version": "0.1.0",
+  "description": "Get started example for Messenger Platform",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "lint": "jshint --exclude node_modules .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fbsamples/messenger-platform-samples.git"
+  },
+  "author": "Zack Hickman",
+  "license": "ISC",
+  "dependencies": {
+    "@google/maps": "^0.3.0",
+    "body-parser": "^1.15.0",
+    "config": "^1.20.4",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.1",
+    "ejs": "^2.4.2",
+    "express": "^4.13.4",
+    "express-session": "^1.14.1",
+    "fb": "^1.1.1",
+    "findango-api": "^1.0.0",
+    "mongoose": "^4.6.5",
+    "node-geocoder": "^3.15.1",
+    "node-wit": "^4.1.0",
+    "querystring": "^0.2.0",
+    "request": "^2.72.0",
+    "wolfram-alpha": "^0.5.0",
+    "yelp-v3": "0.0.5"
+  },
+  "engines": {
+    "node": "~4.1.2"
+  }
+}

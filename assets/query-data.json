@@ -1,0 +1,36 @@
+﻿{
+  "details": [
+    {
+      "entityName": "hasBar",
+      "queryValue": "Full Bar",
+      "placesQueryValue":  "bar"
+    },
+    {
+      "entityName": "hasBeer",
+      "queryValue": "Full Bar",
+      "placesQueryValue":  "bar"
+    },
+    {
+      "entityName": "dogFriendly",
+      "queryValue": "dogs allowed outdoor seating",
+      "placesQueryValue":  "dogs allowed"
+    },
+    {
+      "entityName": "goodForGroups",
+      "queryValue": "good for groups"
+    },
+    {
+      "entityName": "takesReservations",
+      "queryValue": "takes reservations"
+    },
+    {
+      "entityName": "hasOutdoorSeating",
+      "queryValue": "outdoor seating"
+    },
+    {
+      "entityName": "hasTakeOut",
+      "queryValue": "take-out"
+    }
+
+  ]
+}

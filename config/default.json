@@ -1,0 +1,41 @@
+{
+  "facebook": {
+    "appSecret": "1",
+    "appId": "1",
+    "pageAccessToken": "1",
+    "validationToken": "1",
+    "serverURL": "1"
+  },
+  "wit": {
+    "token": "1"
+  },
+  "yelp": {
+    "appId": "1",
+    "appSecret": "1",
+    "accessToken": "1-1"
+  },
+  "amazon": {
+    "appId": "1.1.1.1-78cd-1-1-1"
+  },
+  "api": {
+    "key": "1-ToAMsCM"
+  },
+  "session": {
+    "secret": "1"
+  },
+  "google-maps": {
+    "apiKey": "1"
+  },
+  "uber": {
+    "serverToken": "",
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "fandango": {
+    "apiKey": "1",
+    "secret": "1"
+  },
+  "wolframalpha": {
+    "appId":  "1"
+  }
+}

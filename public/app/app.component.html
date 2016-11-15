@@ -1,0 +1,82 @@
+<h1>{{title}}</h1>
+
+<h3>Routed Movies</h3>
+<nav>
+  <a [routerLink]="['/movies']">Movies</a>
+</nav>
+<router-outlet></router-outlet>
+
+<hr>
+
+<h1>Example Snippets</h1>
+
+<div [ngClass]="{active: isActive}">
+  [ngClass] active
+</div>
+<div [ngClass]="{active: isActive,
+                 shazam: isImportant}">
+  [ngClass] active and boldly important
+</div>
+<div [class.active]="isActive">
+  [class.active]
+</div>
+
+<p></p>
+<a [href]="angularDocsUrl">Angular Docs</a>
+
+<p></p>
+<div>
+  <button (click)="toggleImage()">
+  Image Toggle #1</button>
+  <button (click)="toggleImage($event)">
+  Image Toggle #2</button>
+  <p>Image toggle event type was {{eventType}}</p>
+</div>
+
+<p></p>
+<div *ngIf="showImage">
+  <img [src]="movie.imageurl">
+</div>
+
+<p></p>
+<div [ngStyle]="{color: colorPreference}">
+  color preference #1
+</div>
+<div [style.color]="colorPreference">
+  color preference #2
+</div>
+
+<h3>Movie as JSON</h3>
+<pre>{{movie | json}}</pre>
+
+<h3>Movie Titles via local variable</h3>
+<table>
+<tr *ngFor="let movie of movies">
+  <td>{{movie.title}}</td>
+</tr>
+</table>
+
+<h3>Sliced Movies with pipes</h3>
+<table>
+<tr *ngFor="let movie of movies | slice:0:2">
+
+  <td>{{movie.title | uppercase}}</td>
+
+  <td>{{movie.title | lowercase}}</td>
+
+  <td>{{movie.releaseDate | date}}</td>
+
+  <td>{{movie.price | currency:'USD':true}}</td>
+
+  <td>{{movie.starRating | number}}</td>
+  <td>{{movie.starRating | number:'1.1-2'}}</td>
+  <td>{{movie.approvalRating | percent: '1.0-2'}}</td>
+
+</tr></table>
+
+
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
